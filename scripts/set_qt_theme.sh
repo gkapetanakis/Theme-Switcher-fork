@@ -9,7 +9,7 @@ if [ -z "$THEME_NAME" ]; then
   exit 1
 fi
 
-if command -v kvantummanager &>/dev/null; then
+if ! command -v kvantummanager &>/dev/null; then
   echo "Error: Kvantum manager not installed"
   exit 1
 fi
